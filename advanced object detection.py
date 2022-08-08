@@ -42,5 +42,5 @@ while True:
     cv2.imshow("Detected Face",img)
     cv2.waitKey(0)
     back=input("Do you want exit (yes:y no:n):")
-    if back=="yes":
+    if back=="y":
         break
