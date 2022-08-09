@@ -4,6 +4,10 @@ from os.path import exists
 while True:
     file_exists = exists("config.txt")
     image=input("image:")
+    image_exists=exists(image)
+    if image_exists==False:
+        print("image doesnt exists")
+        break
     sensitivity=input("Sensitivity:")
     if file_exists==True:
         f = open("config.txt", "r")
